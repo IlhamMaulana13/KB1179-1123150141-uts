@@ -43,7 +43,7 @@ class MySplashScreen2 extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
-                  "Dpn't worry! we got you cover. use wallie instead of cash!",
+                  "Don't worry! we got you cover. use wallie instead of cash!",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 16,
