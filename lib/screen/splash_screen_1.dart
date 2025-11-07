@@ -18,11 +18,22 @@ class MySplashScreen extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.amber,
                   image: DecorationImage(
-                    image: AssetImage("assets/images/images.jpeg"),
+                    image: AssetImage("assets/images/bonaparte.jpg"),
                     fit: BoxFit.cover,
                   ),
             ),
           ),
+          const SizedBox(height: 20),
+
+              // 🔹 Judul
+              const Text(
+                "Welcome",
+                style: TextStyle(
+                  fontSize: 32.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
 
         ],
       ),
