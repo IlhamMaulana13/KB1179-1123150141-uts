@@ -7,13 +7,36 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      
+      // 🔹 AppBar dengan tombol kembali
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Text(
+          "Sign In",
+          style: TextStyle(
+            color: Colors.black,
+            fontWeight: FontWeight.w600,
+            fontSize: 22,
+          ),
+        ),
+        centerTitle: true,
+      ),
+
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const SizedBox(height: 50),
+              const SizedBox(height: 20),
+
               // 🔹 Logo atau Icon
               Center(
                 child: Image.asset(
@@ -65,7 +88,8 @@ class LoginScreen extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: Colors.blue[700]!, width: 2),
+                    borderSide:
+                        BorderSide(color: Colors.teal.shade700, width: 2),
                   ),
                 ),
               ),
@@ -89,7 +113,8 @@ class LoginScreen extends StatelessWidget {
                   ),
                   focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                    borderSide: BorderSide(color: Colors.blue[700]!, width: 2),
+                    borderSide:
+                        BorderSide(color: Colors.teal.shade700, width: 2),
                   ),
                 ),
               ),
@@ -103,7 +128,7 @@ class LoginScreen extends StatelessWidget {
                   onPressed: () {},
                   child: Text(
                     'Lupa Password?',
-                    style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                    style: TextStyle(color: Colors.teal.shade700, fontSize: 14),
                   ),
                 ),
               ),
@@ -190,15 +215,20 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
 
-              // 🔹 Footer NIM (warna teal)
-              const Padding(
-                padding: EdgeInsets.only(bottom: 20),
-                child: Text(
-                  "MUHAMMAD ILHAM MAULANA | 1123150141",
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.teal,
-                    fontWeight: FontWeight.w500,
+              const SizedBox(height: 40),
+
+              // 🔹 Footer NIM (warna teal di tengah)
+              const Center(
+                child: Padding(
+                  padding: EdgeInsets.only(bottom: 20),
+                  child: Text(
+                    "MUHAMMAD ILHAM MAULANA | 1123150141",
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 12,
+                      color: Colors.teal,
+                      fontWeight: FontWeight.w500,
+                    ),
                   ),
                 ),
               ),

@@ -10,6 +10,7 @@ class MySplashScreen2 extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(height: 50),
               Container(
