@@ -35,6 +35,21 @@ class MySplashScreen extends StatelessWidget {
                 ),
               ),
 
+              const SizedBox(height: 10),
+
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: Text(
+                  "Forgot to bring your wallet when you are shopping?\nDon’t worry, we’ve got you covered!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black54,
+                    height: 1.5,
+                  ),
+                ),
+              ),
+
         ],
       ),
         ),
