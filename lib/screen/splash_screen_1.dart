@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kb1179_1123150141_uts/screen/splash_screen_2.dart';
 
 class MySplashScreen extends StatelessWidget {
   const MySplashScreen({super.key});
@@ -9,21 +10,21 @@ class MySplashScreen extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Column(
-        children: [
-          SizedBox(height: 50),
-          Container(
-            width: 240,
-            height: 240,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.amber,
+            children: [
+              const SizedBox(height: 50),
+              Container(
+                width: 240,
+                height: 240,
+                decoration: const BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.amber,
                   image: DecorationImage(
-                    image: AssetImage("assets/images/bonaparte.jpg"),
+                    image: AssetImage("assets/images/images.jpeg"),
                     fit: BoxFit.cover,
                   ),
-            ),
-          ),
-          const SizedBox(height: 20),
+                ),
+              ),
+              const SizedBox(height: 20),
 
               // 🔹 Judul
               const Text(
@@ -87,8 +88,51 @@ class MySplashScreen extends StatelessWidget {
                 ],
               ),
 
-        ],
-      ),
+              const Spacer(),
+
+              // 🔹 Tombol Continue
+              Container(
+                margin: const EdgeInsets.only(left: 40, right: 40, bottom: 20),
+                child: SizedBox(
+                  width: double.infinity,
+                  height: 55,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor:
+                          const Color.fromARGB(255, 11, 231, 59), // hijau
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const MySplashScreen2()),
+                      );
+                    },
+                    child: const Text(
+                      "Continue",
+                      style: TextStyle(fontSize: 18, color: Colors.white),
+                    ),
+                  ),
+                ),
+              ),
+
+              // 🔹 Footer NIM (warna teal)
+              const Padding(
+                padding: EdgeInsets.only(bottom: 20),
+                child: Text(
+                  "NIM: 1123150141",
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.teal,
+                    fontWeight: FontWeight.w500,
+                  ),
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
