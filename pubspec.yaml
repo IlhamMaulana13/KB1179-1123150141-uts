@@ -61,6 +61,7 @@ flutter:
     - assets/images/images.jpeg
     - assets/images/image1.jpeg
     - assets/images/image2.jpeg
+    - assets/images/padlock.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

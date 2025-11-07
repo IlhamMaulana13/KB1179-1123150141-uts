@@ -123,7 +123,7 @@ class MySplashScreen extends StatelessWidget {
               const Padding(
                 padding: EdgeInsets.only(bottom: 20),
                 child: Text(
-                  "NIM: 1123150141",
+                  "MUHAMMAD ILHAM MAULANA | 1123150141",
                   style: TextStyle(
                     fontSize: 12,
                     color: Colors.teal,
