@@ -23,6 +23,35 @@ class MySplashScreen2 extends StatelessWidget {
                   ),
             ),
           ),
+
+const SizedBox(height: 20),
+
+              // 🔹 Judul
+              const Text(
+                "Welcome",
+                style: TextStyle(
+                  fontSize: 32.0,
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
+              const SizedBox(height: 10),
+
+              // 🔹 Subtitle 2 baris
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 30),
+                child: Text(
+                  "Dpn't worry! we got you cover. use wallie instead of cash!",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16,
+                    color: Colors.black54,
+                    height: 1.5,
+                  ),
+                ),
+              ),
+
         ],
       ),
         ),
