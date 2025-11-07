@@ -6,7 +6,7 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.teal,
+      backgroundColor: Colors.white,
       body: SingleChildScrollView(
         child: Container(
           padding: const EdgeInsets.all(20.0),
@@ -73,6 +73,70 @@ class LoginScreen extends StatelessWidget {
                       color: Colors.blue[700]!,
                       width: 2,
                     ),
+                  ),
+                ),
+              ),
+
+
+              const SizedBox(height: 20),
+
+              // 🔹 Input Password
+              TextField(
+                obscureText: true,
+                decoration: InputDecoration(
+                  labelText: 'Password',
+                  hintText: 'Masukkan password Anda',
+                  prefixIcon: const Icon(Icons.lock_outline),
+                  suffixIcon: const Icon(Icons.visibility_off_outlined),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(color: Colors.grey[300]!),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                    borderSide: BorderSide(
+                      color: Colors.blue[700]!,
+                      width: 2,
+                    ),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 10),
+
+              // 🔹 Lupa Password
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Lupa Password?',
+                    style: TextStyle(color: Colors.blue[700], fontSize: 14),
+                  ),
+                ),
+              ),
+
+              const SizedBox(height: 20),
+
+              // 🔹 Tombol Login
+              SizedBox(
+                height: 50,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.teal,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                  ),
+                  onPressed: () {
+
+                  },
+                  child: const Text(
+                    "Login",
+                    style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
                 ),
               ),
