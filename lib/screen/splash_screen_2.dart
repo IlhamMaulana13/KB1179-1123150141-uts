@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kb1179_1123150141_uts/screen/splash_screen_3.dart';
 
 class MySplashScreen2 extends StatelessWidget {
   const MySplashScreen2({super.key});
@@ -64,7 +65,7 @@ const SizedBox(height: 20),
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFF84a98c), // aktif
+                      color: Color(0xFFedede9), // aktif
                     ),
                   ),
                   Container(
@@ -73,7 +74,7 @@ const SizedBox(height: 20),
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // non-aktif
+                      color: Color(0xFF84a98c), // non-aktif
                     ),
                   ),
                   Container(
@@ -108,7 +109,7 @@ const SizedBox(height: 20),
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const MySplashScreen2()),
+                            builder: (context) => const MySplashScreen3()),
                       );
                     },
                     child: const Text(
