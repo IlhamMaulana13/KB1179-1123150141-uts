@@ -10,22 +10,22 @@ class MySplashScreen2 extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: Column(
-        children: [
-          SizedBox(height: 50),
-          Container(
-            width: 240,
-            height: 240,
-            decoration: BoxDecoration(
-              shape: BoxShape.circle,
-              color: Colors.amber,
+            children: [
+              SizedBox(height: 50),
+              Container(
+                width: 240,
+                height: 240,
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Colors.amber,
                   image: DecorationImage(
                     image: AssetImage("assets/images/image1.jpeg"),
                     fit: BoxFit.cover,
                   ),
-            ),
-          ),
+                ),
+              ),
 
-const SizedBox(height: 20),
+              const SizedBox(height: 20),
 
               // 🔹 Judul
               const Text(
@@ -99,8 +99,12 @@ const SizedBox(height: 20),
                   height: 55,
                   child: ElevatedButton(
                     style: ElevatedButton.styleFrom(
-                      backgroundColor:
-                          const Color.fromARGB(255, 11, 231, 59), // hijau
+                      backgroundColor: const Color.fromARGB(
+                        255,
+                        11,
+                        231,
+                        59,
+                      ), // hijau
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -109,7 +113,8 @@ const SizedBox(height: 20),
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const MySplashScreen3()),
+                          builder: (context) => const MySplashScreen3(),
+                        ),
                       );
                     },
                     child: const Text(
@@ -132,9 +137,8 @@ const SizedBox(height: 20),
                   ),
                 ),
               ),
-
-        ],
-      ),
+            ],
+          ),
         ),
       ),
     );
