@@ -39,7 +39,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                     SizedBox(height: 8),
                     Text(
-                      "Silakan login untuk melanjutkan",
+                      "Silakan login untuk melanjutkan \n Silahkan Masukkan Email dan Password Anda",
                       style: TextStyle(fontSize: 16, color: Colors.black54),
                     ),
                   ],
