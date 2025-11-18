@@ -1,6 +1,7 @@
 # 📱 Splash Screen Flutter
 
 * **Nama:** Muhammad Ilham Maulana
+* **Kelas:** TI 23 SH SE
 * **NIM:** 1123150141
 
 ---
