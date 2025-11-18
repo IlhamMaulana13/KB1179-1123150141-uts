@@ -19,7 +19,7 @@ Tampilan halaman splash screen aplikasi:
 
 ## ⚙️ Cara Menjalankan Project
 
-1. Buka project di **Android Studio** atau **VS Code**.
+1. Buka project di **VS Code**.
 2. Pastikan perangkat (emulator atau HP) sudah terhubung.
 3. Jalankan perintah berikut di terminal:
 

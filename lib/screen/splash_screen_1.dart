@@ -65,7 +65,7 @@ class MySplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFF84a98c), // aktif
+                      color: Color(0xFF84a98c),
                     ),
                   ),
                   Container(
@@ -74,7 +74,7 @@ class MySplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // non-aktif
+                      color: Color(0xFFedede9),
                     ),
                   ),
                   Container(
@@ -83,7 +83,7 @@ class MySplashScreen extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // non-aktif
+                      color: Color(0xFFedede9),
                     ),
                   ),
                 ],
@@ -91,7 +91,6 @@ class MySplashScreen extends StatelessWidget {
 
               const Spacer(),
 
-              // 🔹 Tombol Continue
               Container(
                 margin: const EdgeInsets.only(left: 40, right: 40, bottom: 20),
                 child: SizedBox(
