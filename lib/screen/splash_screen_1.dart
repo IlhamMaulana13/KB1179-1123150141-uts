@@ -27,7 +27,6 @@ class MySplashScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
 
-              // 🔹 Judul
               const Text(
                 "Welcome",
                 style: TextStyle(
@@ -39,7 +38,6 @@ class MySplashScreen extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // 🔹 Subtitle 2 baris
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
@@ -55,7 +53,6 @@ class MySplashScreen extends StatelessWidget {
 
               const SizedBox(height: 40),
 
-              // 🔹 3 Bullet Indicator
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -119,7 +116,6 @@ class MySplashScreen extends StatelessWidget {
                 ),
               ),
 
-              // 🔹 Footer NIM (warna teal)
               const Padding(
                 padding: EdgeInsets.only(bottom: 20),
                 child: Text(

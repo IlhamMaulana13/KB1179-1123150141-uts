@@ -149,7 +149,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Tombol Login Google
               SizedBox(
                 height: 50,
                 child: OutlinedButton.icon(
@@ -174,7 +173,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Teks "Belum punya akun?"
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -194,7 +192,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 40),
 
-              // 🔹 Footer NIM (warna teal di tengah)
               const Center(
                 child: Padding(
                   padding: EdgeInsets.only(bottom: 20),

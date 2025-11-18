@@ -28,7 +28,6 @@ class MySplashScreen2 extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 🔹 Judul
               const Text(
                 "Welcome",
                 style: TextStyle(
@@ -40,7 +39,6 @@ class MySplashScreen2 extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // 🔹 Subtitle 2 baris
               const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 30),
                 child: Text(
@@ -56,7 +54,6 @@ class MySplashScreen2 extends StatelessWidget {
 
               const SizedBox(height: 40),
 
-              // 🔹 3 Bullet Indicator
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -66,7 +63,7 @@ class MySplashScreen2 extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // aktif
+                      color: Color(0xFFedede9),
                     ),
                   ),
                   Container(
@@ -75,7 +72,7 @@ class MySplashScreen2 extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFF84a98c), // non-aktif
+                      color: Color(0xFF84a98c),
                     ),
                   ),
                   Container(
@@ -84,7 +81,7 @@ class MySplashScreen2 extends StatelessWidget {
                     margin: const EdgeInsets.symmetric(horizontal: 4),
                     decoration: const BoxDecoration(
                       shape: BoxShape.circle,
-                      color: Color(0xFFedede9), // non-aktif
+                      color: Color(0xFFedede9),
                     ),
                   ),
                 ],
@@ -92,7 +89,6 @@ class MySplashScreen2 extends StatelessWidget {
 
               const Spacer(),
 
-              // 🔹 Tombol Continue
               Container(
                 margin: const EdgeInsets.only(left: 40, right: 40, bottom: 20),
                 child: SizedBox(
@@ -105,7 +101,7 @@ class MySplashScreen2 extends StatelessWidget {
                         11,
                         231,
                         59,
-                      ), // hijau
+                      ), 
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12),
                       ),
@@ -126,7 +122,7 @@ class MySplashScreen2 extends StatelessWidget {
                 ),
               ),
 
-              // 🔹 Footer NIM (warna teal)
+
               const Padding(
                 padding: EdgeInsets.only(bottom: 20),
                 child: Text(
