@@ -30,7 +30,7 @@ class LoginScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      "Welcome",
+                      "Selamat Datang",
                       style: TextStyle(
                         fontSize: 28,
                         fontWeight: FontWeight.bold,
