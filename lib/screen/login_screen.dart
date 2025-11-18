@@ -37,7 +37,6 @@ class LoginScreen extends StatelessWidget {
             children: [
               const SizedBox(height: 20),
 
-              // 🔹 Logo atau Icon
               Center(
                 child: Image.asset(
                   "assets/images/padlock.png",
@@ -49,7 +48,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 30),
 
-              // 🔹 Title dan Subtitle
               const Center(
                 child: Column(
                   children: [
@@ -72,7 +70,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 40),
 
-              // 🔹 Input Email
               TextField(
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
@@ -96,7 +93,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 🔹 Input Password
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(
@@ -121,7 +117,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              // 🔹 Lupa Password
               Align(
                 alignment: Alignment.centerRight,
                 child: TextButton(
@@ -135,7 +130,6 @@ class LoginScreen extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              // 🔹 Tombol Login
               SizedBox(
                 height: 50,
                 child: ElevatedButton(
@@ -151,23 +145,6 @@ class LoginScreen extends StatelessWidget {
                     style: TextStyle(fontSize: 18, color: Colors.white),
                   ),
                 ),
-              ),
-
-              const SizedBox(height: 30),
-
-              // 🔹 Divider dengan teks "atau"
-              Row(
-                children: const [
-                  Expanded(child: Divider(thickness: 1, color: Colors.grey)),
-                  Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
-                    child: Text(
-                      "atau",
-                      style: TextStyle(color: Colors.black54),
-                    ),
-                  ),
-                  Expanded(child: Divider(thickness: 1, color: Colors.grey)),
-                ],
               ),
 
               const SizedBox(height: 30),
