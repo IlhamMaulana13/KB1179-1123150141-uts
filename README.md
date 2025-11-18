@@ -22,10 +22,10 @@ Tampilan halaman splash screen aplikasi:
 ## ⚙️ Cara Menjalankan Project
 
 1. Buka project di **VS Code**.
-2. Pastikan perangkat (emulator atau HP) sudah terhubung.
+2. Pastikan perangkat (emulator atau HP) sudah terhubung atau menggunakan perangkat lain seperti chrome.
 3. Jalankan perintah berikut di terminal:
 
-   ```bash
+   ```
    flutter run
    ```
 4. Aplikasi akan berjalan langsung di perangkat.
